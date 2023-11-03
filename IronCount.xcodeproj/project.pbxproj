@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B670A269D0A721D15ECD80 /* Pods_IronCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D92A249D08A0346E5B1B8A /* Pods_IronCount.framework */; };
 		6B037C792AD49BDC00E96BA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B037C782AD49BDC00E96BA6 /* AppDelegate.swift */; };
 		6B037C7B2AD49BDC00E96BA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B037C7A2AD49BDC00E96BA6 /* SceneDelegate.swift */; };
-		6B037C7D2AD49BDC00E96BA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B037C7C2AD49BDC00E96BA6 /* ViewController.swift */; };
-		6B037C802AD49BDC00E96BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B037C7E2AD49BDC00E96BA6 /* Main.storyboard */; };
+		6B037C7D2AD49BDC00E96BA6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B037C7C2AD49BDC00E96BA6 /* HomeScreen.swift */; };
 		6B037C822AD49BDD00E96BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B037C812AD49BDD00E96BA6 /* Assets.xcassets */; };
 		6B037C852AD49BDD00E96BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B037C832AD49BDD00E96BA6 /* LaunchScreen.storyboard */; };
+		6B037C8D2AD49EA100E96BA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B037C8C2AD49EA100E96BA6 /* GoogleService-Info.plist */; };
+		6B42E2F42AD82C8000611D88 /* BodyMeasurementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42E2F32AD82C8000611D88 /* BodyMeasurementsView.swift */; };
+		6B42E2F62AD82FE300611D88 /* LiftingLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42E2F52AD82FE300611D88 /* LiftingLogsViewController.swift */; };
+		6B44B8562AF44C75004ED967 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44B8552AF44C75004ED967 /* CircularProgressBarView.swift */; };
+		6BD0FEB72AF03A9300C625F1 /* WeightInputMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0FEB62AF03A9300C625F1 /* WeightInputMessageView.swift */; };
+		6BD0FEBA2AF260E800C625F1 /* UserBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0FEB92AF260E800C625F1 /* UserBarView.swift */; };
+		6BD0FEBC2AF42BF700C625F1 /* MuscleGroupDistributionWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0FEBB2AF42BF600C625F1 /* MuscleGroupDistributionWidgetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A245FBE454F72602606FA4D /* Pods-IronCount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronCount.debug.xcconfig"; path = "Target Support Files/Pods-IronCount/Pods-IronCount.debug.xcconfig"; sourceTree = "<group>"; };
+		6A14B96F552B4FC9B4CDADC6 /* Pods-IronCount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronCount.release.xcconfig"; path = "Target Support Files/Pods-IronCount/Pods-IronCount.release.xcconfig"; sourceTree = "<group>"; };
 		6B037C752AD49BDC00E96BA6 /* IronCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B037C782AD49BDC00E96BA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B037C7A2AD49BDC00E96BA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6B037C7C2AD49BDC00E96BA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6B037C7F2AD49BDC00E96BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B037C7C2AD49BDC00E96BA6 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		6B037C812AD49BDD00E96BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B037C842AD49BDD00E96BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B037C862AD49BDD00E96BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B037C8C2AD49EA100E96BA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6B42E2F32AD82C8000611D88 /* BodyMeasurementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasurementsView.swift; sourceTree = "<group>"; };
+		6B42E2F52AD82FE300611D88 /* LiftingLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingLogsViewController.swift; sourceTree = "<group>"; };
+		6B44B8552AF44C75004ED967 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
+		6BD0FEB62AF03A9300C625F1 /* WeightInputMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInputMessageView.swift; sourceTree = "<group>"; };
+		6BD0FEB92AF260E800C625F1 /* UserBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBarView.swift; sourceTree = "<group>"; };
+		6BD0FEBB2AF42BF600C625F1 /* MuscleGroupDistributionWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroupDistributionWidgetView.swift; sourceTree = "<group>"; };
+		C6D92A249D08A0346E5B1B8A /* Pods_IronCount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IronCount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B670A269D0A721D15ECD80 /* Pods_IronCount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				6B037C772AD49BDC00E96BA6 /* IronCount */,
 				6B037C762AD49BDC00E96BA6 /* Products */,
+				99E2D7C6CE3BA8414E0DEF64 /* Pods */,
+				C843C3B14DBB178E52D130AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,62 @@
 		6B037C772AD49BDC00E96BA6 /* IronCount */ = {
 			isa = PBXGroup;
 			children = (
+				6BD0FEB82AF260C000C625F1 /* Components */,
+				6BD0FEB52AF03A6A00C625F1 /* MessageBoxViews */,
+				6B42E2F22AD82C3600611D88 /* TabViews */,
 				6B037C782AD49BDC00E96BA6 /* AppDelegate.swift */,
 				6B037C7A2AD49BDC00E96BA6 /* SceneDelegate.swift */,
-				6B037C7C2AD49BDC00E96BA6 /* ViewController.swift */,
-				6B037C7E2AD49BDC00E96BA6 /* Main.storyboard */,
+				6B037C7C2AD49BDC00E96BA6 /* HomeScreen.swift */,
 				6B037C812AD49BDD00E96BA6 /* Assets.xcassets */,
 				6B037C832AD49BDD00E96BA6 /* LaunchScreen.storyboard */,
 				6B037C862AD49BDD00E96BA6 /* Info.plist */,
+				6B037C8C2AD49EA100E96BA6 /* GoogleService-Info.plist */,
 			);
 			path = IronCount;
+			sourceTree = "<group>";
+		};
+		6B42E2F22AD82C3600611D88 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				6B42E2F32AD82C8000611D88 /* BodyMeasurementsView.swift */,
+				6B42E2F52AD82FE300611D88 /* LiftingLogsViewController.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		6BD0FEB52AF03A6A00C625F1 /* MessageBoxViews */ = {
+			isa = PBXGroup;
+			children = (
+				6BD0FEB62AF03A9300C625F1 /* WeightInputMessageView.swift */,
+			);
+			path = MessageBoxViews;
+			sourceTree = "<group>";
+		};
+		6BD0FEB82AF260C000C625F1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6BD0FEB92AF260E800C625F1 /* UserBarView.swift */,
+				6BD0FEBB2AF42BF600C625F1 /* MuscleGroupDistributionWidgetView.swift */,
+				6B44B8552AF44C75004ED967 /* CircularProgressBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		99E2D7C6CE3BA8414E0DEF64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A245FBE454F72602606FA4D /* Pods-IronCount.debug.xcconfig */,
+				6A14B96F552B4FC9B4CDADC6 /* Pods-IronCount.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C843C3B14DBB178E52D130AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6D92A249D08A0346E5B1B8A /* Pods_IronCount.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B037C892AD49BDD00E96BA6 /* Build configuration list for PBXNativeTarget "IronCount" */;
 			buildPhases = (
+				BF63DC7BF11D78DFED1C956C /* [CP] Check Pods Manifest.lock */,
 				6B037C712AD49BDC00E96BA6 /* Sources */,
 				6B037C722AD49BDC00E96BA6 /* Frameworks */,
 				6B037C732AD49BDC00E96BA6 /* Resources */,
+				777E7ED93198383DCC8505DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +195,74 @@
 			files = (
 				6B037C852AD49BDD00E96BA6 /* LaunchScreen.storyboard in Resources */,
 				6B037C822AD49BDD00E96BA6 /* Assets.xcassets in Resources */,
-				6B037C802AD49BDC00E96BA6 /* Main.storyboard in Resources */,
+				6B037C8D2AD49EA100E96BA6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		777E7ED93198383DCC8505DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IronCount/Pods-IronCount-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IronCount/Pods-IronCount-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IronCount/Pods-IronCount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF63DC7BF11D78DFED1C956C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IronCount-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B037C712AD49BDC00E96BA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B037C7D2AD49BDC00E96BA6 /* ViewController.swift in Sources */,
+				6BD0FEBC2AF42BF700C625F1 /* MuscleGroupDistributionWidgetView.swift in Sources */,
+				6B037C7D2AD49BDC00E96BA6 /* HomeScreen.swift in Sources */,
+				6BD0FEB72AF03A9300C625F1 /* WeightInputMessageView.swift in Sources */,
 				6B037C792AD49BDC00E96BA6 /* AppDelegate.swift in Sources */,
+				6B44B8562AF44C75004ED967 /* CircularProgressBarView.swift in Sources */,
+				6B42E2F62AD82FE300611D88 /* LiftingLogsViewController.swift in Sources */,
+				6BD0FEBA2AF260E800C625F1 /* UserBarView.swift in Sources */,
 				6B037C7B2AD49BDC00E96BA6 /* SceneDelegate.swift in Sources */,
+				6B42E2F42AD82C8000611D88 /* BodyMeasurementsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6B037C7E2AD49BDC00E96BA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B037C7F2AD49BDC00E96BA6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6B037C832AD49BDD00E96BA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +311,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +374,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +395,7 @@
 		};
 		6B037C8A2AD49BDD00E96BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A245FBE454F72602606FA4D /* Pods-IronCount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,7 +406,6 @@
 				INFOPLIST_FILE = IronCount/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +423,7 @@
 		};
 		6B037C8B2AD49BDD00E96BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A14B96F552B4FC9B4CDADC6 /* Pods-IronCount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,7 +434,6 @@
 				INFOPLIST_FILE = IronCount/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
