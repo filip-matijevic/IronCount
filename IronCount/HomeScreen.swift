@@ -16,7 +16,6 @@ class HomeScreen: UIViewController {
             randomView.frame = CGRect(x: Int.random(in: 1...50), y: Int.random(in: 1...50), width: 50, height: 50)
         })
         
-        muscleDistributionView.circularBars[0].animateProgressLayer(duration: 2.0, progress: CGFloat.random(in: 0.0...1.0))
         /*
         let roundedBoxVC = WeightInputMessageView()
         roundedBoxVC.modalPresentationStyle = .overCurrentContext
@@ -63,7 +62,7 @@ class HomeScreen: UIViewController {
         
         contentView.addSubview(button)
         contentView.addSubview(muscleDistributionView)
-        contentView.addSubview(randomView)
+        //contentView.addSubview(randomView)
         
         
         view.addSubview(userBarView)
@@ -74,7 +73,6 @@ class HomeScreen: UIViewController {
         print(userScrollView.contentSize.width)
         print(userScrollView.frame)
         
-        muscleDistributionView.circulatBar.animateProgress(newStart: CGFloat.random(in: 0.0...1.0), newProgress: CGFloat.random(in: 0.0...1.0), duration: 2)
     }
     
     private func addConstraints(){

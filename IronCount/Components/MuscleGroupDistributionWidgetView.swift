@@ -23,14 +23,13 @@ class MuscleGroupDistributionWidgetView: UIView {
     }
     var dummyExerciseCount = [3, 4, 3, 5, 5]
     var circularBars = [
-        CircularProgressBarView(startAngle: (CGFloat.pi * 2 * 1.0 / 5.0), progress: 0.1, color: .darkGray),
-        CircularProgressBarView(startAngle: (CGFloat.pi * 2 * 2.0 / 5.0), progress: 0.1, color: .blue),
-        CircularProgressBarView(startAngle: (CGFloat.pi * 2 * 3.0 / 5.0), progress: 0.1, color: .black),
-        CircularProgressBarView(startAngle: (CGFloat.pi * 2 * 4.0 / 5.0), progress: 0.1, color: .red),
-        CircularProgressBarView(startAngle: (CGFloat.pi * 2 * 5.0 / 5.0), progress: 0.1, color: .purple)
+        CircularProgressBarView(angleNormalized: 0/5.0, progressNormalized: 0.1, color: .black),
+        CircularProgressBarView(angleNormalized: 1/5.0, progressNormalized: 0.1, color: .black),
+        CircularProgressBarView(angleNormalized: 2/5.0, progressNormalized: 0.1, color: .black),
+        CircularProgressBarView(angleNormalized: 3/5.0, progressNormalized: 0.1, color: .black),
+        CircularProgressBarView(angleNormalized: 4/5.0, progressNormalized: 0.1, color: .black)
     ]
         
-    let circulatBar = CircularProgressBarView(startAngle: 0, progress: 0.9, color: .darkGray)
     
     private let randomButton : UIButton = {
         let button = UIButton()
@@ -42,6 +41,13 @@ class MuscleGroupDistributionWidgetView: UIView {
         
         return button
     }()
+    
+    private let humanImage :UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "human")?.withRenderingMode(.alwaysTemplate))
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.tintColor = .black
+        return imageView
+    }()
     private func Init(){
         self.frame = CGRect(x: 0, y: 0, width: 30, height: 40)
         self.backgroundColor = .white
@@ -50,18 +56,20 @@ class MuscleGroupDistributionWidgetView: UIView {
         
         let exeCount = 20.0
         var prevNormalizeStart = 0.0
+        
         for i in 0...4{
-            let normalizeStart = CGFloat.pi * 2 * CGFloat(dummyExerciseCount[i]) / exeCount + prevNormalizeStart
-            let normalizeProgress = CGFloat(dummyExerciseCount[i]) / exeCount
-            print(normalizeStart)
-            print(normalizeProgress)
-            circularBars[i].startAngle = normalizeStart
-            circularBars[i].progress = normalizeProgress - 0.1
-            prevNormalizeStart = normalizeStart
+            let currentBarProgress = Double(dummyExerciseCount[i]) / exeCount
+            print(prevNormalizeStart)
+            print(currentBarProgress)
+            circularBars[i].angleNormalized = prevNormalizeStart
+            circularBars[i].progressNormalized = currentBarProgress - 0.015
+            
+            prevNormalizeStart = prevNormalizeStart + currentBarProgress
             addSubview(circularBars[i])
         }
+         
         
-        
+        addSubview(humanImage)
         addSubview(randomButton)
         randomButton.addTarget(self, action: #selector(ClickButton), for: .touchUpInside)
         
@@ -86,6 +94,13 @@ class MuscleGroupDistributionWidgetView: UIView {
         constraints.append(randomButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10))
         constraints.append(randomButton.widthAnchor.constraint(equalToConstant: 40))
         constraints.append(randomButton.heightAnchor.constraint(equalToConstant: 40))
+        
+        
+        let imagePadding = 30.0
+        constraints.append(humanImage.topAnchor.constraint(equalTo: self.topAnchor, constant: imagePadding))
+        constraints.append(humanImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: imagePadding))
+        constraints.append(humanImage.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -imagePadding))
+        constraints.append(humanImage.heightAnchor.constraint(equalTo: humanImage.widthAnchor))
         NSLayoutConstraint.activate(constraints)
     }
 

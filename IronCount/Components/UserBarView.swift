@@ -10,7 +10,7 @@ import UIKit
 class UserBarView: UIView {
     
     private let blurredBackgroundView : UIVisualEffectView = {
-        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialDark)
+        let blurEffect = UIBlurEffect(style: .light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.layer.cornerRadius = 15
         blurEffectView.clipsToBounds = true
